@@ -1,1 +1,1 @@
-Testing amenda command
+pushing a single commit instead of all 
