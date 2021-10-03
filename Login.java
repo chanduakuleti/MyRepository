@@ -1,6 +1,1 @@
-
-
-pushing a single commit instead of all 
-
-
-login file
+Created a file and writting something to check the commands
