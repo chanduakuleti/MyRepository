@@ -1,0 +1,16 @@
+---
+- name: AD User
+  hosts: windows
+  tasks:
+    - name: Service-tableau_svc-dev
+      win_domain_user:
+	       firstname: service
+           domain_username: tableau_svc-dev
+		   distinguished_name: CN=Service - tableau_svc-dev,OU=Service,OU=BHSF Entities,DC=AD,DC=BHSSF,DC=ORG
+           sam_account_name: tableau_svc-dev
+		   state: present
+           domain_password: $localTableauAdminPwd
+		   path: CN=Person,CN=Schema,CN=Configuration,DC=BHSSF,DC=ORG
+		   password_expired: 
+		   password_never_expires: 
+		   upn: tableau_svc-s@AD.BHSSF.ORG
